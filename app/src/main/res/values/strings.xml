@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">JuniorMathWin</string>
+    <string name="lunchScreenName">Junior Math Winner</string>
+    <string name="score">Score : </string>
+    <string name="equalSign">=</string>
+    <string name="questionMark">?</string>
+
+    <string name="easyBtnName">Easy</string>
+    <string name="mediumBtnName">Medium</string>
+    <string name="hardBtnName">Hard</string>
+
+    <string name="scoreTitle">Your Score : </string>
+    <string name="bestScores">Best Scores</string>
+    <string name="tryAgainButton">Try Again ?</string>
+</resources>

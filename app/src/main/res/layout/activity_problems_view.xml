@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kidappbg1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/bsr"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/operationSign"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/bsr"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/bsr"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/equalSignView"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bsr"
+            android:gravity="center"
+            android:text="@string/equalSign"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/questionmarkView"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bsr"
+            android:gravity="bottom|center"
+            android:text="@string/questionMark"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/bsr"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/oldClock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answer1"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="50dp"
+                android:backgroundTint="@color/easyBtnColor"
+                android:fontFamily="@font/bsr"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/answer2"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/easyBtnColor"
+                android:fontFamily="@font/bsr"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answer3"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="50dp"
+                android:backgroundTint="@color/easyBtnColor"
+                android:fontFamily="@font/bsr"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/answer4"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/easyBtnColor"
+                android:fontFamily="@font/bsr"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/bsr"
+        android:text="@string/score"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/oldClock"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/xvo6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

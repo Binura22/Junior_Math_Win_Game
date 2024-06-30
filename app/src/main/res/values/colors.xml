@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="easyBtnColor">#5DBB63</color>
+    <color name="mediumBtnColor">#F6C90E</color>
+    <color name="hardBtnColor">#FF5733</color>
+    <color name="ansBtnColor">#6EDB8E</color>
+    <color name="scoreView">#94CDE8</color>
+</resources>
